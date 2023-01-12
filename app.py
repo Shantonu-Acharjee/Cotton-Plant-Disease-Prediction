@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Jun 11 22:34:20 2020
-
-@author: Krish Naik
+Created on Thu Jun 12/01/2023
+@author: Shantonu Acharjee
 """
 
 from __future__ import division, print_function
@@ -63,15 +62,14 @@ def model_predict(img_path, model):
     preds = model.predict(x)
     preds=np.argmax(preds, axis=1)
     if preds==0:
-        preds="The leaf is diseased cotton leaf"
+        preds="তুলা গাছের পাতাটি রোগে আক্রান্ত"
     elif preds==1:
-        preds="The leaf is diseased cotton plant"
+        preds="তুলা গাছটি রোগে আক্রান্ত"
     elif preds==2:
-        preds="The leaf is fresh cotton leaf"
+        preds="তুলা গাছের পাতাটি সুস্থ রয়েছে"
     else:
-        preds="The leaf is fresh cotton plant"
+        preds="তুলা গাছটি সুস্থ রয়েছে"
         
-    
     
     return preds
 
