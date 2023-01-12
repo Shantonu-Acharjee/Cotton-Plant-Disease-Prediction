@@ -10,164 +10,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">   
 
     <title>COTTON PLANT DISEASE PREDICTION</title>
 
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-
-
-        }
-
-        .carousel-inner img {
-            height: 70vh;
-        }
-
-        form {
-            display: flex;
-            height: 85vh;
-            justify-content: center;
-            align-items: center;
-            margin-top: 50px;
-            width: 60%;
-            text-align: center;
-            margin: auto;
-        }
-
-
-        .details h2 {
-            
-            position: relative;
-            top: 100px;
-            margin: auto;
-            color: rgb(18, 231, 231);
-            font-size: 3rem;
-        }
-
-        label:hover {
-            transform: scale(1.03);
-        }
-
-        .details h2 {
-            /* margin-bottom: 300px; */
-            position: relative;
-            top: 100px;
-            margin: auto;
-            color: rgb(18, 231, 231);
-            font-size: 3rem;
-
-        }
-
-        .gallery-h1 h1 {
-
-            background-color: rgb(44, 43, 43);
-            color: white;
-            padding: 20px;
-            border-radius: 15px;
-
-        }
-
-
-
-
-
-        .details h1 {
-            color: white;
-            padding: 20px;
-            border-radius: 15px;
-            background-color: rgb(45, 47, 49);
-        }
-
-
-        .upload {
-
-            font-size: 20px;
-            background-color: rgb(255, 252, 252);
-            border-radius: 20px;
-            outline: none;
-            width: 315px;
-            color: rgb(0, 0, 0);
-            border: 3px solid rgb(45, 47, 49);
-
-
-
-        }
-
-        ::-webkit-file-upload-button {
-            color: white;
-            padding: 20px;
-            border: 2px solid rgb(129, 129, 129);
-            background-color: rgb(129, 129, 129);
-            border-radius: 15px;
-
-        }
-
-        ::-webkit-file-upload-button:hover {
-            border-radius: 20px;
-            border: 2px solid rgb(177, 174, 174);
-
-
-        }
-
-
-
-        input[type="submit"] {
-            position: absolute;
-            margin-top: 150px;
-            padding: 15px 35px;
-            background-color: white;
-            border-radius: 15px;
-            color: black;
-            font-size: 1.5rem;
-            border: 4px solid rgb(31, 185, 190);
-        }
-
-        .carousel-caption {
-            background: rgba(24, 25, 26, 0.5);
-            border-radius: 10px;
-        }
-
-
-
-        .carousel-caption h3 {
-
-
-            font-family: 'Rowdies', cursive;
-            color: yellow;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-
-        }
-
-        .carousel-caption p {
-            padding: 7px;
-
-
-        }
-
-        .img-thumbnail {
-            height: 300px;
-        }
-
-        .Content-h5 {
-
-            padding: 15px;
-            background-color: rgb(153, 156, 150);
-            color: white;
-            border-radius: 15px;
-            margin-bottom: 25px;
-        }
-
-
-        @media only screen and (max-width: 325px) {
-            body {
-                font-size: x-small;
-            }
-        }
-    </style>
+    
 
 
 </head>
@@ -176,13 +23,18 @@
 
 
     <header>
+
         <div class="container-fluid">
+            <h1 class="header-title">কৃষাণের বন্ধু</h1>
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
                 <ol class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1" class=""></li>
                     <li data-target="#myCarousel" data-slide-to="2" class=""></li>
                 </ol>
+
+
                 <div class="carousel-inner">
                     <div class="carousel-item active ">
                         <img src="/static/images/img1.jpg" class="d-block w-100" alt="...">
@@ -191,13 +43,9 @@
                             <div class="container background-img3">
                                 <div class="carousel-caption">
 
-                                    <h3>Cotton
-                                        Plant Disease Prediction AI App</h3>
+                                    <h3>তুলা গাছের রোগ নির্ণয়</h3>
                                     <p>
-                                        Many veterans said that Deep Learning and AI is a threat to our world, but if we
-                                        use it properly, we can do many good things today, we will see a small example
-                                        of this in which we will be in cotton farming
-                                        Find out about the disease
+                                    এখানে কৃত্তিম বুদ্ধিমত্তার ব্যবহার করে তুলা গাছের রোগ নির্ণয় করা হয়েছে।
                                     </p>
 
                                 </div>
@@ -209,13 +57,10 @@
                         <img src="/static/images/img2.jpg" class="d-block w-100" alt="...">
                         <div class="container">
                             <div class="carousel-caption">
-                                <h3>कपास पेड़ का रोग का अंदाज और उपाय 
-                                </h3>
+                                <h3>তুলা গাছের রোগ নির্ণয়</h3>
                                 <p>
-                                    कई दिग्गजों ने कहा कि Deep Learning and AI यह हमारी दुनिया के लिए खतरा है लेकिन अगर
-                                    हम इसका सही यूज़ करें तो हम कई अच्छे काम भी कर सकते हैं आज इसी का छोटा सा example
-                                    देखेंगे जिसमें हम कपास की खेती में होने वाले
-                                    रोग के बारे मे पता करेगें</p>
+                                    এখানে কৃত্তিম বুদ্ধিমত্তার ব্যবহার করে তুলা গাছের রোগ নির্ণয় করা হয়েছে।
+                                </p>
 
                             </div>
                         </div>
@@ -227,12 +72,10 @@
                         <div class="container">
                             <div class="container ">
                                 <div class="carousel-caption">
-                                    <h3>
-                                        कपाशीच्या झाडाच्या रोगाचा अंदाज आणि उपाय </h3>
-                                    <p>गेल्या काही वर्षांपासून
-								 सखोल अभ्यास (Deep Learning) आणि कृत्रिम बुद्धिमत्ता (Artificial Intelligence) हा सर्वात चर्चेचा विषय राहिला आहे, 
-								बरेच दिग्गज लोक म्हणतात की हा आपल्या जगासाठी धोका आहे, परंतु जर आपण त्याचा योग्य वापर केला तर आपण आज बर्‍याच चांगल्या गोष्टी करू शकतो. 
-								त्याचेच एक उदाहरण हे  की  आपण कापसाचे रोग जाणून त्यावर त्यावर उपाय काढतो.
+
+                                    <h3>তুলা গাছের রোগ নির্ণয়</h3>
+                                    <p>
+                                        এখানে কৃত্তিম বুদ্ধিমত্তার ব্যবহার করে তুলা গাছের রোগ নির্ণয় করা হয়েছে।
                                     </p>
 
                                 </div>
@@ -240,14 +83,11 @@
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+
+
+                
+
+
             </div>
         </div>
     </header>
@@ -258,17 +98,21 @@
 
     <section>
 
-        <div class="container-fluid details">
-            <h1 class="text-center mt-5 ">Predict Cotton Crop Disease & Get Cure</h1>
+        <div class="details">
+            
+            <h2>গাছের ছবি আপলোড করুন</h2>
 
-            <h2 class="text-center mt-4 mb-4" style="font-size: 2rem;">कपास के पेड कि तस्वीर डालिये</h2>
+
             <form action="/predict" method="post" enctype="multipart/form-data" onsubmit="showloading()">
 
                 <input type="file" name="image" class="upload">
-                <input type="submit" value="Predict">
+                <input type="submit" value="ফলাফল দেখুন">
 
             </form>
+
+
         </div>
+
     </section>
 
 
@@ -334,22 +178,7 @@
     </section>
 
 
-    <section>
-        <div class="container Content-h5">
-
-            <h5 style="font-size: 1rem;" class="text-center my-3 contents">
-                Delivery Contact:
-                IndianAIProduction.business@gmail.com</h5>
-
-        </div>
-    </section>
-
-
-
-
-
-
-
+    
 
 
 
