@@ -65,6 +65,6 @@ def predict():
     
 # For local system & cloud
 if __name__ == "__main__":
-    app.run(threaded=False, debug= True) 
+    app.run(threaded=False, debug= True, host= '10.0.0.174') 
     
     
